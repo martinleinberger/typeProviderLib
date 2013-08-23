@@ -51,6 +51,26 @@
 
 <p>The types are dynamically generated based on the JSON schemas that can also be found on the <a href="https://github.com/101companies/101worker/tree/master/schemas">101worker repository</a>. The actual data is delivered by 101explorer.</p>
 
+<p>So, for example the <a href="https://github.com/101companies/101worker/blob/master/schemas/101repo_file.json">file schema</a>:</p>
+
+<div class="highlight"><pre>        <span class="s2">"classifier"</span><span class="o">:</span> <span class="p">{</span>
+            <span class="s2">"type"</span><span class="o">:</span> <span class="s2">"string"</span><span class="p">,</span>
+            <span class="s2">"description"</span><span class="o">:</span> <span class="s2">"classifier of this entity"</span>
+        <span class="p">},</span>
+        <span class="s2">"geshi"</span><span class="o">:</span> <span class="p">{</span>
+            <span class="s2">"type"</span><span class="o">:</span> <span class="s2">"string"</span><span class="p">,</span>
+            <span class="s2">"description"</span><span class="o">:</span> <span class="s2">"geshi code that can be used for highlighting"</span>
+        <span class="p">},</span>
+        <span class="s2">"derived"</span><span class="o">:</span> <span class="p">{</span>
+            <span class="s2">"type"</span><span class="o">:</span> <span class="s2">"array"</span><span class="p">,</span>
+            <span class="s2">"description"</span><span class="o">:</span> <span class="s2">"array of all derived files"</span><span class="p">,</span>
+            <span class="s2">"items"</span><span class="o">:</span> <span class="p">{</span>
+</pre></div>
+
+<p>will get transformed to a normal F# type with full IDE support:</p>
+
+<p><img src="https://f.cloud.github.com/assets/1643263/1016713/7c7a3ce0-0c00-11e3-8467-cea3d02c7652.png" alt="typeproviderscreenshot"></p>
+
 <h3>
 <a name="how-well-does-it-work" class="anchor" href="#how-well-does-it-work"><span class="octicon octicon-link"></span></a>How well does it work</h3>
 
