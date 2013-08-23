@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Typeproviderlib : Type provider for the 101companies 101explorer" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Typeproviderlib</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/martinleinberger/typeProviderLib">View on GitHub</a>
+
+          <h1 id="project_title">Typeproviderlib</h1>
+          <h2 id="project_tagline">Type provider for the 101companies 101explorer</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/martinleinberger/typeProviderLib/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/martinleinberger/typeProviderLib/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a name="type-provider-library-for-101explorer" class="anchor" href="#type-provider-library-for-101explorer"><span class="octicon octicon-link"></span></a>Type Provider library for 101explorer</h3>
+
+<p>This library provides types that can be used to access 101explorer. E.g. for accessing a specific file:</p>
+
+<div class="highlight"><pre> <span class="k">let</span> <span class="n">url</span> <span class="o">=</span> <span class="s2">"http://101companies.org/resources/contributions/javaStatic/src/test/java/org/softlang/company/tests/CutTest.java"</span>
+    <span class="k">let</span> <span class="n">target</span> <span class="o">=</span> <span class="nn">OneOhOne</span><span class="p">.</span><span class="nc">File</span><span class="o">(</span><span class="n">url</span><span class="o">)</span>
+
+    <span class="n">printfn</span> <span class="s2">"%s"</span> <span class="n">target</span><span class="o">.</span><span class="n">classifier</span>
+    <span class="n">printfn</span> <span class="s2">"%s"</span> <span class="n">target</span><span class="o">.</span><span class="n">language</span>
+    <span class="n">target</span><span class="o">.</span><span class="n">derived</span> <span class="o">|&gt;</span> <span class="nn">Seq</span><span class="p">.</span><span class="n">iter</span><span class="o">(</span> <span class="k">fun</span> <span class="n">derived</span> <span class="o">-&gt;</span>
+        <span class="n">printfn</span> <span class="s2">"%s"</span> <span class="n">derived</span><span class="o">.</span><span class="n">name</span>
+    <span class="o">)</span>
+</pre></div>
+
+<h3>
+<a name="how-does-it-work" class="anchor" href="#how-does-it-work"><span class="octicon octicon-link"></span></a>How does it work</h3>
+
+<p>The types are dynamically generated based on the JSON schemas that can also be found on the <a href="https://github.com/101companies/101worker/tree/master/schemas">101worker repository</a>. The actual data is delivered by 101explorer.</p>
+
+<h3>
+<a name="how-well-does-it-work" class="anchor" href="#how-well-does-it-work"><span class="octicon octicon-link"></span></a>How well does it work</h3>
+
+<p>Well, its pretty fresh and I don't think I'll continue it, but it was a decent excercise ;)</p>
+
+<h3>
+<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>So far, <a href="https://github.com/martinleinberger" class="user-mention">@martinleinberger</a> is the only developer.</p>
+
+<h3>
+<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>There is no support :&gt;</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Typeproviderlib maintained by <a href="https://github.com/martinleinberger">martinleinberger</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
